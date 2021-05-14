@@ -7,7 +7,7 @@ class CategoriasScreen extends StatelessWidget {
   Widget  build(BuildContext context) {
     return GridView(
       gridDelegate: SliverGridDelegateWithMaxCrossAxisExtent(
-        //Uma hora que tem scrool 
+        //Uma hora que tem scrool aaa
       )
     );
   }
