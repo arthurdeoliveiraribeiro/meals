@@ -10,7 +10,7 @@ class CategoryItem extends StatelessWidget {
   const CategoryItem(this.category);
 
   void _selectCategory(BuildContext context){
-    Navigator.of(context).push(
+/*     Navigator.of(context).push(
       MaterialPageRoute(
         builder: (_){
           //Aqui eu entro na categoria de acordo com a receita 
@@ -19,7 +19,15 @@ class CategoryItem extends StatelessWidget {
           //navegando para outra nela
         },
       ),
+      ); */
+      //Outra maneira de navegar em telas 
+      Navigator.of(context).pushNamed
+      ('/categories-meals',
+        arguments: category
+        // esse caminho leva ate aqui 
       );
+
+
   }
   @override
   Widget  build(BuildContext context) {
