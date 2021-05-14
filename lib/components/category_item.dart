@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import '../models/category.dart';
-import '../screens/categories_meals_screen.dart';
+import '../utils/app_routes.dart';
 
 class CategoryItem extends StatelessWidget {
 
@@ -22,7 +22,7 @@ class CategoryItem extends StatelessWidget {
       ); */
       //Outra maneira de navegar em telas 
       Navigator.of(context).pushNamed
-      ('/categories-meals',
+      (AppRoutes.CATEGORIES_MEALS,
         arguments: category
         // esse caminho leva ate aqui 
       );
