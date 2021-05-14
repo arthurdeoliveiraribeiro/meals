@@ -7,8 +7,15 @@ class CategoriasScreen extends StatelessWidget {
   Widget  build(BuildContext context) {
     return GridView(
       gridDelegate: SliverGridDelegateWithMaxCrossAxisExtent(
-        //Uma hora que tem scrool aaa
-      )
+        maxCrossAxisExtent: 200, //cada elemento só pode 200px
+        childAspectRatio: 3 / 2,
+        crossAxisSpacing: 20, 
+        mainAxisExtent: 20,
+
+      ),
+      children: <Widget>[
+        
+      ],
     );
   }
 }
