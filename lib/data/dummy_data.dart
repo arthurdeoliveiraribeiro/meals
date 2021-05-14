@@ -6,6 +6,8 @@ import '../models/category.dart';
  aqui na dummy eu criei uma lista de categorias 
 */
 const DUMMY_CATEGORIES = const [
+  // lista de categoria
+ 
   Category(
     id: 'c1',
     title: 'Italiano',

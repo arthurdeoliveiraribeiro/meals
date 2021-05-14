@@ -22,6 +22,7 @@ class CategoriesScreen extends StatelessWidget {
           children: DUMMY_CATEGORIES.map((cat){
             //na tela vou mostra pela categoria que estou passando nesse momento
             // retornando em cada item da lista o estilo da category item
+            // com isso vai retornar a categoria de acordo com que eu pedi, 
             return CategoryItem(cat);
           }).toList(),
         ),

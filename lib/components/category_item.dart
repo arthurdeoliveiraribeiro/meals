@@ -3,15 +3,19 @@ import '../models/category.dart';
 import '../screens/categories_meals_screen.dart';
 
 class CategoryItem extends StatelessWidget {
+
+  
   final Category category;
 
   const CategoryItem(this.category);
-  
+
   void _selectCategory(BuildContext context){
     Navigator.of(context).push(
       MaterialPageRoute(
         builder: (_){
-          return CategoriesMealsScreen();
+          //Aqui eu entro na categoria de acordo com a receita 
+          return CategoriesMealsScreen(category  );
+          // Retornada a categoria de acordo que você clicou 
           //navegando para outra nela
         },
       ),
