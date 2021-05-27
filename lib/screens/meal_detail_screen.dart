@@ -96,7 +96,14 @@ class MealDetailScreen extends StatelessWidget {
             )
           ],
         ),
-      )
+      ),
+      floatingActionButton: FloatingActionButton(
+        child:  Icon(Icons.favorite_outline),
+        onPressed: (){
+          Navigator.of(context).pop(meal.title);
+          //Para sair daquela tela, estou passando uma informação para quando o usuário fechar a tela fica armazenado a informação 
+        },
+      ),
     );
   }
 }

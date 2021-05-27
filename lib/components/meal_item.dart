@@ -9,7 +9,18 @@ class MealItem extends StatelessWidget {
   const MealItem(this.meal);
 
   void _selectMeal(BuildContext context){ 
-    Navigator.of(context).pushNamed(AppRoutes.MEAL_DETAIL, arguments: meal);
+    Navigator.of(context).pushNamed(
+      AppRoutes.MEAL_DETAIL, arguments: meal
+    ).then((result) {
+      if(result == null){
+        print('Sem resultado');
+        //retorna null quando eu não clico no coração 
+      }
+      else{
+        print(result);
+        //retorna result quando eu clico no coração 
+      }
+    });
    }
 
   @override

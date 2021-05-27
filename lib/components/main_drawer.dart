@@ -47,6 +47,7 @@ class MainDrawer extends StatelessWidget {
             Icons.restaurant_menu,'Refeições',
             ()=>Navigator.of(context).pushReplacementNamed(AppRoutes.HOME)
             //Criei uma função onde eu passo o navigator função simples 
+            //aqui eu não crio uma pilha e sim uma nova 
           ),
           _createItem(
             Icons.settings_applications, 'Configurações',
