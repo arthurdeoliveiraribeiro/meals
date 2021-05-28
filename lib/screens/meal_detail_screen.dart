@@ -11,7 +11,7 @@ class MealDetailScreen extends StatelessWidget {
             ),
             child: Text(
               title,
-              style: Theme.of(context).textTheme.title,
+              style: Theme.of(context).textTheme.headline6,
             ),
           );
   }
